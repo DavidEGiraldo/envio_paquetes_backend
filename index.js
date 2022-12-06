@@ -3,10 +3,10 @@ let cors = require("cors");
 let bodyParser = require("body-parser");
 require("dotenv").config();
 
-const orderRoute = require("../backend/routes/order.route");
-const userRoute = require("../backend/routes/user.route");
+const orderRoute = require("..routes/order.route");
+const userRoute = require("..routes/user.route");
 
-require("../backend/db/db");
+require("../db/db");
 
 const app = express();
 app.use(bodyParser.json());
